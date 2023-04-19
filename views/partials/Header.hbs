@@ -1,0 +1,38 @@
+<style>
+    .dropdown-menu li a:hover {background-color: #626d76;}
+</style>
+
+<header>
+
+        <!-- sidebar -->
+        <div class="sidebar">
+            <br><br><br><br><br>
+            <nav>
+                <a href="/"><i class="fas fa-home"></i>&nbsp; <span>Explore</span></a>
+                <a href="/searchpage"><i class="fas fa-search"></i>&nbsp; <span>Search</span></a>
+                <a href="/likedsongs"><i class="fas fa-bookmark"></i>&nbsp; <span>My Library</span></a>
+            </nav>
+        </div>
+
+        <!-- top nav -->
+        <div class="top-nav">
+            <div class="logo">
+                <a href="/"><h1>VIBΣBӨX</h1></a>
+            </div>
+
+            {{#if user }}
+            <div class="dropdown" >
+                <a class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fas fa-user"></i>
+                </a>
+                <ul class="dropdown-menu" style="background-color: #626d76; color:#151a1e;">
+                  <li><a class="dropdown-item" href="/logout">Logout</a></li>
+                </ul>
+            </div> 
+            {{else}}
+           
+            {{/if}}
+
+        </div>
+
+    </header>
